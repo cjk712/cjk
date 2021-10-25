@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中国传统节日</title>
+</head>
+<body>
+    <script src="js/pixi.min.js"></script>
+    <script>
+		var app = new PIXI.Application(800,600);
+        document.body.appendChild(app.view);
+        
+        var bg = new PIXI.Sprite.fromImage("res/980.png");
+		bg.weight = 800;
+		bg.height = 600;
+        app.stage.addChild(bg);
+		
+		
+		var tc = new PIXI.Text("天穿节");
+		app.stage.addChild(tc);
+		tc.x = 600;
+		tc.y = 50;
+		
+		var hz = new PIXI.Text("花朝节");
+		app.stage.addChild(hz);
+		hz.x = 500;
+		hz.y = 150;
+		
+		var hs = new PIXI.Text("寒食节");
+		app.stage.addChild(hs);
+		hs.x = 400;
+		hs.y = 250;
+		
+		var zh = new PIXI.Text("中和节");
+		app.stage.addChild(zh);
+		zh.x = 300;
+		zh.y = 350;
+		
+		var zy = new PIXI.Text("中元节");
+		app.stage.addChild(zy);
+		zy.x = 200;
+		zy.y = 450;
+		
+		tc.interactive = true;
+		tc.on("click",move1);
+		
+		hs.interactive = true;
+		hs.on("click",move2);
+		
+		hz.interactive = true;
+		hz.on("click",move3);
+		
+		zh.interactive = true;
+		zh.on("click",move4);
+		
+		zy.interactive = true;
+		zy.on("click",move5);
+		
+		function move1(){
+			bg.visible = false;
+			tc1.visible = true;
+			tc.visible = false;
+			hz.visible = false;
+			hs.visible = false;
+			zh.visible = false;
+			zy.visible = false;
+			hz1.visible = false;
+			hs1.visible = false;
+			zh1.visible = false;
+			zy1.visible = false;
+		}
+		
+		function move2(){
+			bg.visible = false;
+			tc1.visible = false;
+			tc.visible = false;
+			hz.visible = false;
+			hs.visible = false;
+			zh.visible = false;
+			zy.visible = false;
+			hz1.visible = false;
+			hs1.visible = true;
+			zh1.visible = false;
+			zy1.visible = false;
+		}
+		
+		function move3(){
+			bg.visible = false;
+			tc1.visible = false;
+			tc.visible = false;
+			hz.visible = false;
+			hs.visible = false;
+			zh.visible = false;
+			zy.visible = false;
+			hz1.visible = true;
+			hs1.visible = false;
+			zh1.visible = false;
+			zy1.visible = false;
+		}
+		
+		function move4(){
+			bg.visible = false;
+			tc1.visible = false;
+			tc.visible = false;
+			hz.visible = false;
+			hs.visible = false;
+			zh.visible = false;
+			zy.visible = false;
+			hz1.visible = false;
+			hs1.visible = false;
+			zh1.visible = true;
+			zy1.visible = false;
+		}
+		
+		function move5(){
+			bg.visible = false;
+			tc1.visible = false;
+			tc.visible = false;
+			hz.visible = false;
+			hs.visible = false;
+			zh.visible = false;
+			zy.visible = false;
+			hz1.visible = false;
+			hs1.visible = false;
+			zh1.visible = false;
+			zy1.visible = true;
+		}
+		
+		var tc1 = new PIXI.Sprite.fromImage("res/nw1.jpg");
+		app.stage.addChild(tc1);
+		tc1.weight = 800;
+		tc1.height = 600;
+		tc1.scale.x = 0.7;
+		tc1.scale.y = 0.5;
+		tc1.visible = false;
+		
+		
+		var hs1 = new PIXI.Sprite.fromImage("res/hs1.png");
+		app.stage.addChild(hs1);
+		hs1.weight = 800;
+		hs1.height = 600;
+		hs1.scale.x = 0.7;
+		hs1.scale.y = 0.5;
+		hs1.visible = false;
+		
+		
+		var hz1 = new PIXI.Sprite.fromImage("res/hz1.jpg");
+		app.stage.addChild(hz1);
+		hz1.weight = 800;
+		hz1.height = 600;
+		hz1.scale.x = 0.7;
+		hz1.scale.y = 0.5;
+		hz1.visible = false;
+		
+		var zh1 = new PIXI.Sprite.fromImage("res/zh1.png");
+		app.stage.addChild(zh1);
+		zh1.weight = 800;
+		zh1.height = 600;
+		zh1.scale.x = 0.7;
+		zh1.scale.y = 0.5;
+		zh1.visible = false;
+		
+		var zy1 = new PIXI.Sprite.fromImage("res/zy1.jpg");
+		app.stage.addChild(zy1);
+		zy1.weight = 800;
+		zy1.height = 600;
+		zy1.scale.x = 0.7;
+		zy1.scale.y = 0.5;
+		zy1.visible = false;
+
+    </script>
+</body>
+</html>
